@@ -1,0 +1,100 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #bde0fe;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: #000000;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #faedcd;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+input, select {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 100px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+span {
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #f46262;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .converter {
+    padding: 1rem;
+  }
+
+  input, select {
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  span {
+    margin: 0.5rem 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
